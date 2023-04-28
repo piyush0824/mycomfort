@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="ex1_cs.css">
+  </head>
+
+  <body
+    background=""
+  >
+    <div align="cener">
+      <header>
+        <nav>
+          <h1>Registration form</h1>
+          <table border="1">
+            <tr>
+              <td><a href="#">Home</a>&nbsp;</td>
+              <td><a href="#">personal</a>&nbsp;</td>
+              <td><a href="#">Educational</a>&nbsp;</td>
+              <td><a href="#">Login/signup</a></td>
+            </tr>
+          </table>
+        </nav>
+      </header>
+      <hr />
+      <h2>Personal Information</h2>
+      <form action="">
+        <p>Name: <input type="text" name="name" required /></p>
+          <label class="inline">
+          <p>Male <input type="radio" name="gender" id="male" /></p>
+        </label>
+        <label class="inline"></label>
+          <p>Female <input type="radio" name="gender" id="female" /></p>
+        </label>
+          <p>Age<input type="text"></p>
+          <p>DOB <input type="date"></p>
+
+        <p>
+          Address
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </p>
+        <p>
+          Email
+          <input type="email" id="email" pattern=".com" size="50" required />
+        </p>
+        <p>
+          Pincode: <input type="number" name="pincode" id="pincode" required />
+        </p>
+        <br />
+
+        <h2>Educational information</h2>
+        Highest education: <input type="text">
+        Score: <input type="twxt">
+        class 12th board: <input type="text">
+        Percentage% :<input type="text">
+        class 10th board: <input type="text">
+        Percentage% :<input type="text">
+
+        <h2>Payment Information</h2>
+        <p>
+          Card types*
+          <select name="card_type" id="card_type" required>
+            <option value="">--select a card type</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Mastercard</option>
+          </select>
+        </p>
+
+        <p>
+          Card Number*
+          <input type="number" name="card_number" id="card_number" required />
+        </p>
+        <p>
+          Expiry Date
+          <input type="date" name="exp_date" id="exp_date" required />
+        </p>
+        <p>CVV: * <input type="password" name="cvv" id="cvv" required /></p>
+        <input type="submit" value="Pay now" />
+        <br />
+        <br />
+
+        <article align="left">
+          <details>
+            <summary><mark>Disclaimer</mark></summary>
+            This webpage is for development purpose only. No information from
+            this webpage will be stored.
+          </details>
+        </article>
+
+        <hr />
+        <footer>
+          <a href="#">FAQ</a>&nbsp;| <a href="#">Privacy policy</a>&nbsp;|
+          <a href="#">Refund policy</a>&nbsp;| <a href="#">About us</a>&nbsp;|
+          <a href="#">&copy;</a>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
